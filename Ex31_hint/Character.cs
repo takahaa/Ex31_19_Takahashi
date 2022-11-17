@@ -15,6 +15,8 @@ namespace Ex31_hint
             this.hp = hp;
             this.power = power;
         }
+
+        //親クラス
         public virtual void Attack(Character destination)
         {
             Console.WriteLine($"{this.name}は{destination.name}をぶんなぐった！");
