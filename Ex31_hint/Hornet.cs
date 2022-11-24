@@ -17,6 +17,8 @@ namespace Ex31_hint
             if (destination.animal)
             {
                 Console.WriteLine($"{destination.name}は毒が回って即死した！\n");
+                destination.hp -= destination.hp;
+                Console.WriteLine($"{destination.name}の残りのHPは{destination.hp}\n");
             }
             else
             {
