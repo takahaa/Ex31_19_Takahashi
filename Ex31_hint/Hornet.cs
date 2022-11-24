@@ -16,7 +16,7 @@ namespace Ex31_hint
             //相手が動物のとき
             if (destination.animal)
             {
-                Console.WriteLine($"{destination.name}は毒が回って即死した！\n");
+                Console.WriteLine($"{destination.name}は毒が回って即死した！");
                 destination.hp -= destination.hp;
                 Console.WriteLine($"{destination.name}の残りのHPは{destination.hp}\n");
             }
