@@ -6,7 +6,7 @@ namespace Ex31_hint
 {
     //Characterから派生
     /// <summary>
-    /// がんタンク
+    /// タンク
     /// </summary>
     class Tank : Character
     {
