@@ -4,16 +4,21 @@ using System.Text;
 
 namespace Ex31_hint
 {
+    /// <summary>
+    /// キャラクター
+    /// </summary>
     class Character
     {
         readonly public string name;
         public float hp;
         protected float power;
-        public Character(string name,float hp,float power)
+        public bool animal;
+        public Character(string name,float hp,float power,bool animal)
         {
             this.name = name;
             this.hp = hp;
             this.power = power;
+            this.animal = animal;
         }
 
         //親クラス
@@ -22,7 +27,7 @@ namespace Ex31_hint
             Console.WriteLine($"{this.name}は{destination.name}をぶんなぐった！");
             Console.WriteLine($"{destination.name}は{this.power}のダメージ");
             destination.hp -= this.power;
-            Console.WriteLine($"{destination.name}の残りのHPは{destination.hp}");
+            Console.WriteLine($"{destination.name}の残りのHPは{destination.hp}\n");
         }
     }
 }
